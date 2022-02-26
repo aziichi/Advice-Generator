@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope');
+
+:root{
+/* Colors */
+
+/* Primary */
+
+--Light_Cyan: hsl(193, 38%, 86%);
+--Neon_Green: hsl(150, 100%, 66%);
+
+/* Neutral */
+
+--Grayish_Blue: hsl(217, 19%, 38%);
+--Dark_Grayish_Blue: hsl(217, 19%, 26%);
+--Dark_Grayish_Blue2: hsl(216, 23%, 17%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+main{
+    display: flex;
+    min-height: 100vh;
+    background: var(--Dark_Grayish_Blue2);
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: var(--Dark_Grayish_Blue);
+    width: 22rem;
+    min-width: 15rem;
+    max-width: 25rem;
+    min-height: 8rem;
+    max-height: auto;
+    border-radius: 1.25rem;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.divider{
+    width: 80%;
+    padding-bottom: 2.5rem;
+}
+
+.advice-id{
+    color: var(--Neon_Green);
+    font-size: 0.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+.advice-id span{
+    font-size: 1.2rem;
+}
+
+.quote{
+    color: var(--Light_Cyan);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    padding: 1rem 1.5rem 2rem 1.5rem;
+}
+
+.dice{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--Neon_Green);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.dice img{
+    width: 15px;
+}
+
+.dice:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 20px 2px var(--Neon_Green);
+}
+
+
+@media only screen and (max-width:395px){
+    *{
+        font-size: 20px;
+    }
+    .card{
+        margin: 0 1.5rem;
+    }
+}
