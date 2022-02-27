@@ -42,7 +42,7 @@ main{
     max-height: auto;
     border-radius: 1.25rem;
     align-items: center;
-    transition: all 0.2s ease-in-out;
+    transition: height 0.2s ease-in-out;
 }
 
 .divider{
@@ -87,6 +87,7 @@ main{
 
 .dice img{
     width: 15px;
+    transition: transform 0.3s ease;
 }
 
 .dice:hover{

@@ -11,11 +11,13 @@ async function get_advice(){
 
     return response.json();
 }
-
+let r = 0;
 dice.addEventListener("click", () => {
+    r += 90;
+    dice.childNodes[0].style.transform = `rotate(${r}deg)`;
     get_advice()
     .then(data=>{
         id.innerHTML = `ADVICE # ${data["slip"]["id"]}`;
-        quote.textContent = `${data["slip"]["advice"]}`;
+        quote.textContent = `"${data["slip"]["advice"]}"`;
     });
 });
