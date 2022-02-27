@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/advice-generator-solution-zwr-bprf-)
 - Live Site URL: [Live Site](https://azi-01.github.io/Advice-Generator/)
 
 ## My process
