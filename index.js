@@ -18,6 +18,21 @@ dice.addEventListener("click", () => {
     get_advice()
     .then(data=>{
         id.innerHTML = `ADVICE # ${data["slip"]["id"]}`;
+        id.classList.add("fade-in")
+        id.classList.remove("fade-out")
         quote.textContent = `"${data["slip"]["advice"]}"`;
+        quote.classList.add("fade-in")
+        quote.classList.remove("fade-out")
     });
+    
+    if(id.classList.contains("fade-in")){
+        id.classList.remove("fade-in")
+        id.classList.add("fade-out")
+    }
+
+    if(quote.classList.contains("fade-in")){
+        quote.classList.remove("fade-in")
+        quote.classList.add("fade-out")
+    }
+    
 });

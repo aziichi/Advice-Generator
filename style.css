@@ -95,6 +95,33 @@ main{
     box-shadow: 1px 1px 20px 2px var(--Neon_Green);
 }
 
+.fade-in{
+    animation: fade-in 0.2s forwards;
+}
+
+.fade-out{
+    animation: fade-out 0.2s forwards;
+}
+
+
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
 
 @media only screen and (max-width:395px){
     *{
